@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Microsoft</title>
-
-  <meta property="og:title" content="Microsoft">
-  <meta property="og:description" content="Official Microsoft page">
-  <meta property="og:image" content="https://microsoft.com/image.jpg">
-  <meta property="og:url" content="https://xyz.github.io/abc">
-
-  <meta http-equiv="refresh" content="0; url=https://microsoft.com">
-
   <script>
-    window.location.href = "https://microsoft.com";
+    const params = new URLSearchParams(window.location.search);
+    const url = params.get("url");
+
+    if (url) {
+      window.location.replace(url);
+    }
   </script>
 </head>
 <body>
-Redirecting...
+  Redirecting...
 </body>
 </html>

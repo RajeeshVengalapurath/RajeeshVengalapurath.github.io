@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const url = params.get("url");
+
+    if (url) {
+      window.location.replace(url);
+    }
+  </script>
+</head>
+<body>
+  Redirecting...
+</body>
+</html>

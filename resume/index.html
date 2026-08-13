@@ -46,6 +46,27 @@
             margin-bottom: 100px;
         }
 
+        .privacy-banner {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            margin-bottom: 18px;
+            padding: 9px 12px;
+
+            background: #f5f7f9;
+            border: 1px solid #e2e6ea;
+            border-left: 3px solid #b8c2cc;
+
+            color: #66717c;
+            font-size: 11px;
+            line-height: 1.4;
+        }
+
+        .privacy-icon {
+            font-size: 12px;
+        }
+
         /* Print */
         @media print {
 
@@ -55,6 +76,9 @@
                 background: white;
             }
 
+            .privacy-banner {
+                background: #f5f7f9; /*not working in print*/
+            }
             .a4 {
                 width: 210mm;
                 min-height: 0;
@@ -82,6 +106,13 @@
         <p style="text-align: center;">
             <b>Résumé as on Jun 2025</b>
         </p>
+
+        <div class="privacy-banner">
+            <span class="privacy-icon">🔒</span>
+            <span>
+                Certain personal and professional information has been hidden from this online version of the resume.
+            </span>
+        </div>
 
         <table style="width: 100%; border-collapse: collapse;">
             <tr>
@@ -122,22 +153,24 @@
         <div class="borderedtable" style="display: flex; width: 100%; gap: 20px;">
 
             <!-- Table 1 -->
-            <table style="flex: 1; border-collapse: collapse; table-layout: fixed;">
+            <table style="flex: 1; border-collapse: collapse; table-layout: fixed; border: 1px solid #f3f3f3;">
                 <colgroup>
-                    <col style="width: 30%;">
-                    <col style="width: 40%;">
-                    <col style="width: 30%;">
+                    <col style="width: 50%;">
+                    <col style="width: 30.9%;">
+                    <col style="width: 19.1%;">
                 </colgroup>
 
                 <tr><td colspan="3" style="font-size: 14pt; padding: 0.069in;"">Frameworks</td></tr>
-                <tr><td>2A</td><td>2B</td><td>2C</td></tr>
-                <tr><td>3A</td><td>3B</td><td>3C</td></tr>
-                <tr><td>4A</td><td>4B</td><td>4C</td></tr>
-                <tr><td>5A</td><td>5B</td><td>5C</td></tr>
-                <tr><td>6A</td><td>6B</td><td>6C</td></tr>
-                <tr><td>7A</td><td>7B</td><td>7C</td></tr>
-                <tr><td>8A</td><td>8B</td><td>8C</td></tr>
-                <tr><td>9A</td><td>9B</td><td>9C</td></tr>
+                <tr><td><b>.NET ecosystem</b></td><td>2008 - Present</td><td style="text-align: right;">15y</td></tr>
+                <tr><td><b>ASP.NET Core</b></td><td>2019 - Present</td><td style="text-align: right;">4y 5m</td></tr>
+                <tr><td><b>Blazor</b></td><td>2021 - Present</td><td style="text-align: right;">2y</td></tr>
+                <tr><td><b>Angular</b></td><td>2020 - 2021</td><td style="text-align: right;">1y</td></tr>
+                <tr><td><b>Web API</b></td><td>2019 - Present</td><td style="text-align: right;">4y 5m</td></tr>
+                <tr><td><b>Windows Forms</b></td><td>2008 - 2019</td><td style="text-align: right;">11y</td></tr>
+
+                <!-- padding-top and bottom: 0.078in is twice the default padding -->
+                <tr><td style="padding-top: 0.078in; padding-bottom: 0.078in;"><b>Windows Application Development Framework</b></td><td>2011 - 2019</td><td style="text-align: right;">8y</td></tr>
+                
             </table>
 
             <!-- Table 2 -->
@@ -148,15 +181,94 @@
                     <col style="width: 19.1%;">
                 </colgroup>
 
-                <tr><td colspan="3" style="font-size: 14pt; padding: 0.069in;"">Programming Languages</td></tr>
-                <tr><td><b>C#</b></td><td>2009 - Present</td><td>14y 5m</td></tr>
-                <tr><td><b>TypeScript</b></td><td>2020 - 2021</td><td>1y</td></tr>
-                <tr><td><b>JavaScript</b></td><td>Intermediate</td><td></td></tr>
-                <tr><td><b>VB.NET</b></td><td>2008 - 2009</td><td>1y</td></tr>
-                <tr><td><b>VB6</b></td><td>2005 - 2009</td><td>3y 4m</td></tr>
-                <tr><td><b>VC++</b></td><td>2002</td><td>6m</td></tr>
+                <tr><td colspan="3" style="font-size: 14pt; padding: 0.069in;">Programming Languages</td></tr>
+                <tr><td><b>C#</b></td><td>2009 - Present</td><td style="text-align: right;">14y 5m</td></tr>
+                <tr><td><b>TypeScript</b></td><td>2020 - 2021</td><td style="text-align: right;">1y</td></tr>
+                <tr><td><b>JavaScript</b></td><td>Intermediate</td><td style="text-align: right;"></td></tr>
+                <tr><td><b>VB.NET</b></td><td>2008 - 2009</td><td style="text-align: right;">1y</td></tr>
+                <tr><td><b>VB6</b></td><td>2005 - 2009</td><td style="text-align: right;">3y 4m</td></tr>
+                <tr><td><b>VC++</b></td><td>2002</td><td style="text-align: right;">6m</td></tr>
                 <tr><td><b>C</b></td><td>Academic</td><td></td></tr>
                 <tr><td><b>C++</b></td><td>Academic</td><td></td></tr>
+            </table>
+
+        </div>
+
+        <br>
+
+        <div class="borderedtable" style="display: flex; width: 100%; gap: 20px;">
+
+            <!-- Table 1 -->
+            <table style="flex: 1; border-collapse: collapse; table-layout: fixed; border: 1px solid #f3f3f3;">
+                <colgroup>
+                    <col style="width: 50%;">
+                    <col style="width: 30.9%;">
+                    <col style="width: 19.1%;">
+                </colgroup>
+
+                <tr><td colspan="3" style="font-size: 14pt; padding: 0.069in;">Architectural Patterns</td></tr>
+                <tr><td><b>Clean Architecture</b></td><td>2019 - Present</td><td style="text-align: right;">4y 5m</td></tr>
+                <tr><td><b>Repository Pattern</b></td><td>2019 - Present</td><td style="text-align: right;">4y 5m</td></tr>
+                <tr><td><b>Domain-Driven Design</b></td><td>2019 - Present</td><td style="text-align: right;">4y 5m</td></tr>
+                <!-- padding-top and bottom: 0.078in is twice the default padding -->
+                <tr><td style="padding-top: 0.078in; padding-bottom: 0.078in;"><b>Mediator Pattern (MediatR)</b></td><td>2019 - Present</td><td style="text-align: right;">4y 5m</td></tr>
+                <!-- padding-top and bottom: 0.117in is thrice the default padding -->
+                <tr><td style="padding-top: 0.117in; padding-bottom: 0.117in;"><b>Command & Query Responsibility Segregation (CQRS)</b></td><td>2019 - Present</td><td style="text-align: right;">4y 5m</td></tr>
+                
+            </table>
+
+            <!-- Table 2 -->
+            <table style="flex: 1; border-collapse: collapse; table-layout: fixed; border: 1px solid #f3f3f3;">
+                <colgroup>
+                    <col style="width: 50%;">
+                    <col style="width: 30.9%;">
+                    <col style="width: 19.1%;">
+                </colgroup>
+
+                <tr><td colspan="3" style="font-size: 14pt; padding: 0.069in;">Database Technologies</td></tr>
+                <tr><td><b>Entity Framework Core</b></td><td>2019 - Present</td><td style="text-align: right;">4y 5m</td></tr>
+                <tr><td><b>SQL</b></td><td>2005 - Present</td><td style="text-align: right;">17y</td></tr>
+                <tr><td><b>Microsoft SQL Server</b></td><td>2009 - Present</td><td style="text-align: right;">14y 5m</td></tr>
+                <!-- padding-top and bottom: 0.078in is twice the default padding -->
+                <tr><td style="padding-top: 0.078in; padding-bottom: 0.078in;"><b>MySQL<br>&nbsp;</b></td><td>2008 - 2009</td><td style="text-align: right;">1y</td></tr>
+                <!-- padding-top and bottom: 0.117in is thrice the default padding -->
+                <tr><td style="padding-top: 0.117in; padding-bottom: 0.117in;"><b>&nbsp;<br>MS Access<br>&nbsp;</b></td><td>2005 - 2009</td><td style="text-align: right;">3y 4m</td></tr>
+                
+            </table>
+
+        </div>
+
+        <br>
+
+        <div class="borderedtable" style="display: flex; width: 100%; gap: 20px;">
+
+            <!-- Table 1 -->
+            <table style="flex: 1; border-collapse: collapse; table-layout: fixed; border: 1px solid #f3f3f3;">
+                <colgroup>
+                    <col style="width: 50%;">
+                    <col style="width: 50%;">
+                </colgroup>
+
+                <tr><td colspan="3" style="font-size: 14pt; padding: 0.069in;">Domain Knowledge</td></tr>
+                <tr><td><b>1. Inventory</b></td><td><b>2. Accounting</b></td></tr>
+                <tr><td><b>3. Hospital</b></td><td><b>4. Jewelry</b></td></tr>
+                <tr><td><b>5. Hotel / Resort</b></td><td><b>6. Travel Agency</b></td></tr>
+                
+            </table>
+
+            <!-- Table 2 -->
+            <table style="flex: 1; border-collapse: collapse; table-layout: fixed; border: 1px solid #f3f3f3;">
+                <colgroup>
+                    <col style="width: 50%;">
+                    <col style="width: 30.9%;">
+                    <col style="width: 19.1%;">
+                </colgroup>
+
+                <tr><td colspan="3" style="font-size: 14pt; padding: 0.069in;">Other</td></tr>
+                <tr><td><b>CSS</b></td><td>2019 - Present</td><td style="text-align: right;">4y 5m</td></tr>
+                <tr><td><b>Crystal Reports</b></td><td>2005 - 2019</td><td style="text-align: right;">14y</td></tr>
+                <tr><td><b>Git</b></td><td>2019 - Present</td><td style="text-align: right;">4y 5m</td></tr>
+                
             </table>
 
         </div>

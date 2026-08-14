@@ -1,285 +1,313 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>A4 Document</title>
+        <title>A4 Document</title>
 
-    <style>
-        /* Screen */
-        html, body {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background: #d3d3d3;
-            font-family: Arial, sans-serif;
-            font-size: 9pt; 
-            font-weight: 400;
-        }
-
-        .borderedtable table,
-        .borderedtable td {
-            border: 1px solid #f3f3f3;
-            padding: 0.039in;
-        }
-
-        /* The A4 sheet */
-        .a4 {
-            width: 210mm;
-            min-height: 297mm;
-            margin: 30px auto;
-            padding: 20mm;
-
-            box-sizing: border-box;
-
-            background: white;
-
-            /* Paper shadow */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-
-            /* Make the preview larger */
-            transform: scale(1.15);
-            transform-origin: top center;
-            margin-bottom: 100px;
-        }
-
-        .privacy-banner {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-
-            margin-bottom: 18px;
-            padding: 9px 12px;
-
-            background: #f5f7f9;
-            border: 1px solid #e2e6ea;
-            border-left: 3px solid #b8c2cc;
-
-            color: #66717c;
-            font-size: 11px;
-            line-height: 1.4;
-        }
-
-        .privacy-icon {
-            font-size: 12px;
-        }
-
-        /* Print */
-        @media print {
-
-            @page {
-                size: A4;
-                margin: 0;
-            }
-
+        <style>
+            /* Screen */
             html, body {
                 margin: 0;
                 padding: 0;
+            }
+
+            body {
+                background: #d3d3d3;
+                font-family: Arial, sans-serif;
+                font-size: 9pt; 
+                font-weight: 400;
+            }
+
+            .borderedtable table,
+            .borderedtable td {
+                border: 1px solid #f3f3f3;
+                padding: 0.039in;
+            }
+
+            /* The A4 sheet */
+            .a4 {
+                width: 210mm;
+                min-height: 297mm;
+                margin: 30px auto;
+                padding: 20mm;
+
+                box-sizing: border-box;
+
                 background: white;
+
+                /* Paper shadow */
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+
+                /* Make the preview larger */
+                transform: scale(1.15);
+                transform-origin: top center;
+                margin-bottom: 100px;
             }
 
             .privacy-banner {
-                background: #f5f7f9; /*not working in print*/
+                display: flex;
+                align-items: center;
+                gap: 8px;
+
+                margin-bottom: 18px;
+                padding: 9px 12px;
+
+                background: #f5f7f9;
+                border: 1px solid #e2e6ea;
+                border-left: 3px solid #b8c2cc;
+
+                color: #66717c;
+                font-size: 11px;
+                line-height: 1.4;
             }
-            .a4 {
-                width: 210mm;
-                min-height: 0;
 
-                margin: 0;
-                padding: 20mm;
-
-                box-shadow: none;
-                transform: none;
+            .privacy-icon {
+                font-size: 12px;
             }
-        }
-    </style>
-</head>
 
-<body>
+            /* Print */
+            @media print {
 
-    <div class="a4">
+                @page {
+                    size: A4;
+                    margin: 0;
+                }
 
-        <h1 style="font-size: 20pt; font-weight: 400;">Rajeesh Vengalapurath</h1>
+                html, body {
+                    margin: 0;
+                    padding: 0;
+                    background: white;
+                }
 
-        <p style="font-size: 9pt;">
-            <I>Full Stack Developer / Back-end Developer • .NET • Angular • Clean Architecture</I>
-            <br>Bangalore, India
-        </p>
+                .privacy-banner {
+                    background: #f5f7f9; /*not working in print*/
+                }
+                .a4 {
+                    width: 210mm;
+                    min-height: 0;
 
-        <p style="text-align: center;">
-            <b>Résumé as on Jun 2025</b>
-        </p>
+                    margin: 0;
+                    padding: 20mm;
 
-        <div class="privacy-banner">
-            <span class="privacy-icon">🔒</span>
-            <span>
-                Certain personal and professional information has been hidden from this online version of the resume.
-            </span>
+                    box-shadow: none;
+                    transform: none;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="a4">
+
+            <h1 style="font-size: 20pt; font-weight: 400;">Rajeesh Vengalapurath</h1>
+
+            <p style="font-size: 9pt;">
+                <I>Full Stack Developer / Back-end Developer • .NET • Angular • Clean Architecture</I>
+                <br>Bangalore, India
+            </p>
+
+            <p style="text-align: center;">
+                <b>Résumé as on Jun 2025</b>
+            </p>
+
+            <div class="privacy-banner">
+                <span class="privacy-icon">🔒</span>
+                <span>
+                    Certain personal and professional information has been hidden from this online version of the resume.
+                </span>
+            </div>
+
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr>
+                    <td style="text-align: left;">contact@outlook.com</td>
+                    <td style="text-align: right;">English • Hindi • Malayalam</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;"><b>+91 8884433xxx</b></td>
+                    <td style="text-align: right;">DoB: 21 Aug xxxx</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">Portfolio: <b>rajeesh.dev/erp</b></td>
+                    <td style="text-align: right;">linkedin.com/in/rajeeshvengalapurath</td>
+                </tr>
+            </table>
+
+            <p style="text-align: center; font-size: 16pt;">
+                Professional Summary
+            </p>
+
+            <p>
+                Experienced software developer with 17 years in <b>ERP application development</b>, including 15 years in the 
+                <b>.NET</b>  ecosystem and over 4 years with <b>ASP.NET Core</b>. Expertise in building robust solutions using 
+                <b>C#, ASP.NET Core, Angular, WinForms</b>, and <b>SQL Server</b>. Proficient across the entire software development 
+                life cycle—from requirement analysis and architecture to coding, testing, and maintenance.
+            </p>
+
+            <p>
+                Currently working as a freelancer, maintaining and modernizing my <b>own ERP system</b>—from a mature 
+                <b>Windows application</b> to a <b>web-based platform</b> using <b>ASP.NET Core, Angular</b>, and 
+                <b>Clean Architecture</b>. Product details available at: <b>rajeesh.dev/erp</b>
+            </p>
+
+            <p style="text-align: center; font-size: 16pt;">
+                Skills
+            </p>
+
+            <div class="borderedtable" style="display: flex; width: 100%; gap: 20px;">
+
+                <!-- Table 1 -->
+                <table style="flex: 1; border-collapse: collapse; table-layout: fixed; border: 1px solid #f3f3f3;">
+                    <colgroup>
+                        <col style="width: 50%;">
+                        <col style="width: 30.9%;">
+                        <col style="width: 19.1%;">
+                    </colgroup>
+
+                    <tr><td colspan="3" style="font-size: 14pt; padding: 0.069in;"">Frameworks</td></tr>
+                    <tr><td><b>.NET ecosystem</b></td><td>2008 - Present</td><td style="text-align: right;">15y</td></tr>
+                    <tr><td><b>ASP.NET Core</b></td><td>2019 - Present</td><td style="text-align: right;">4y 5m</td></tr>
+                    <tr><td><b>Blazor</b></td><td>2021 - Present</td><td style="text-align: right;">2y</td></tr>
+                    <tr><td><b>Angular</b></td><td>2020 - 2021</td><td style="text-align: right;">1y</td></tr>
+                    <tr><td><b>Web API</b></td><td>2019 - Present</td><td style="text-align: right;">4y 5m</td></tr>
+                    <tr><td><b>Windows Forms</b></td><td>2008 - 2019</td><td style="text-align: right;">11y</td></tr>
+
+                    <!-- padding-top and bottom: 0.078in is twice the default padding -->
+                    <tr><td style="padding-top: 0.078in; padding-bottom: 0.078in;"><b>Windows Application Development Framework</b></td><td>2011 - 2019</td><td style="text-align: right;">8y</td></tr>
+                    
+                </table>
+
+                <!-- Table 2 -->
+                <table style="flex: 1; border-collapse: collapse; table-layout: fixed; border: 1px solid #f3f3f3;">
+                    <colgroup>
+                        <col style="width: 50%;">
+                        <col style="width: 30.9%;">
+                        <col style="width: 19.1%;">
+                    </colgroup>
+
+                    <tr><td colspan="3" style="font-size: 14pt; padding: 0.069in;">Programming Languages</td></tr>
+                    <tr><td><b>C#</b></td><td>2009 - Present</td><td style="text-align: right;">14y 5m</td></tr>
+                    <tr><td><b>TypeScript</b></td><td>2020 - 2021</td><td style="text-align: right;">1y</td></tr>
+                    <tr><td><b>JavaScript</b></td><td>Intermediate</td><td style="text-align: right;"></td></tr>
+                    <tr><td><b>VB.NET</b></td><td>2008 - 2009</td><td style="text-align: right;">1y</td></tr>
+                    <tr><td><b>VB6</b></td><td>2005 - 2009</td><td style="text-align: right;">3y 4m</td></tr>
+                    <tr><td><b>VC++</b></td><td>2002</td><td style="text-align: right;">6m</td></tr>
+                    <tr><td><b>C</b></td><td>Academic</td><td></td></tr>
+                    <tr><td><b>C++</b></td><td>Academic</td><td></td></tr>
+                </table>
+
+            </div>
+
+            <br>
+
+            <div class="borderedtable" style="display: flex; width: 100%; gap: 20px;">
+
+                <!-- Table 1 -->
+                <table style="flex: 1; border-collapse: collapse; table-layout: fixed; border: 1px solid #f3f3f3;">
+                    <colgroup>
+                        <col style="width: 50%;">
+                        <col style="width: 30.9%;">
+                        <col style="width: 19.1%;">
+                    </colgroup>
+
+                    <tr><td colspan="3" style="font-size: 14pt; padding: 0.069in;">Architectural Patterns</td></tr>
+                    <tr><td><b>Clean Architecture</b></td><td>2019 - Present</td><td style="text-align: right;">4y 5m</td></tr>
+                    <tr><td><b>Repository Pattern</b></td><td>2019 - Present</td><td style="text-align: right;">4y 5m</td></tr>
+                    <tr><td><b>Domain-Driven Design</b></td><td>2019 - Present</td><td style="text-align: right;">4y 5m</td></tr>
+                    <!-- padding-top and bottom: 0.078in is twice the default padding -->
+                    <tr><td style="padding-top: 0.078in; padding-bottom: 0.078in;"><b>Mediator Pattern (MediatR)</b></td><td>2019 - Present</td><td style="text-align: right;">4y 5m</td></tr>
+                    <!-- padding-top and bottom: 0.117in is thrice the default padding -->
+                    <tr><td style="padding-top: 0.117in; padding-bottom: 0.117in;"><b>Command & Query Responsibility Segregation (CQRS)</b></td><td>2019 - Present</td><td style="text-align: right;">4y 5m</td></tr>
+                    
+                </table>
+
+                <!-- Table 2 -->
+                <table style="flex: 1; border-collapse: collapse; table-layout: fixed; border: 1px solid #f3f3f3;">
+                    <colgroup>
+                        <col style="width: 50%;">
+                        <col style="width: 30.9%;">
+                        <col style="width: 19.1%;">
+                    </colgroup>
+
+                    <tr><td colspan="3" style="font-size: 14pt; padding: 0.069in;">Database Technologies</td></tr>
+                    <tr><td><b>Entity Framework Core</b></td><td>2019 - Present</td><td style="text-align: right;">4y 5m</td></tr>
+                    <tr><td><b>SQL</b></td><td>2005 - Present</td><td style="text-align: right;">17y</td></tr>
+                    <tr><td><b>Microsoft SQL Server</b></td><td>2009 - Present</td><td style="text-align: right;">14y 5m</td></tr>
+                    <!-- padding-top and bottom: 0.078in is twice the default padding -->
+                    <tr><td style="padding-top: 0.078in; padding-bottom: 0.078in;"><b>MySQL<br>&nbsp;</b></td><td>2008 - 2009</td><td style="text-align: right;">1y</td></tr>
+                    <!-- padding-top and bottom: 0.117in is thrice the default padding -->
+                    <tr><td style="padding-top: 0.117in; padding-bottom: 0.117in;"><b>&nbsp;<br>MS Access<br>&nbsp;</b></td><td>2005 - 2009</td><td style="text-align: right;">3y 4m</td></tr>
+                    
+                </table>
+
+            </div>
+
+            <br>
+
+            <div class="borderedtable" style="display: flex; width: 100%; gap: 20px;">
+
+                <!-- Table 1 -->
+                <table style="flex: 1; border-collapse: collapse; table-layout: fixed; border: 1px solid #f3f3f3;">
+                    <colgroup>
+                        <col style="width: 50%;">
+                        <col style="width: 50%;">
+                    </colgroup>
+
+                    <tr><td colspan="3" style="font-size: 14pt; padding: 0.069in;">Domain Knowledge</td></tr>
+                    <tr><td><b>1. Inventory</b></td><td><b>2. Accounting</b></td></tr>
+                    <tr><td><b>3. Hospital</b></td><td><b>4. Jewelry</b></td></tr>
+                    <tr><td><b>5. Hotel / Resort</b></td><td><b>6. Travel Agency</b></td></tr>
+                    
+                </table>
+
+                <!-- Table 2 -->
+                <table style="flex: 1; border-collapse: collapse; table-layout: fixed; border: 1px solid #f3f3f3;">
+                    <colgroup>
+                        <col style="width: 50%;">
+                        <col style="width: 30.9%;">
+                        <col style="width: 19.1%;">
+                    </colgroup>
+
+                    <tr><td colspan="3" style="font-size: 14pt; padding: 0.069in;">Other</td></tr>
+                    <tr><td><b>CSS</b></td><td>2019 - Present</td><td style="text-align: right;">4y 5m</td></tr>
+                    <tr><td><b>Crystal Reports</b></td><td>2005 - 2019</td><td style="text-align: right;">14y</td></tr>
+                    <tr><td><b>Git</b></td><td>2019 - Present</td><td style="text-align: right;">4y 5m</td></tr>
+                    
+                </table>
+
+            </div>
+
+            <p style="text-align: center; font-size: 16pt;">
+                Technical Experience & Projects
+            </p>
+
+            <div class="borderedtable" style="display: flex; width: 100%;">
+
+                <table style="flex: 1; border-collapse: collapse; table-layout: fixed; border: 1px solid #f3f3f3;">
+                    <tr><td colspan="2" style="font-size: 14pt; padding: 0.069in;">1. Raptoroid ERP</td></tr>
+                    <tr><td style="border-right: 0;"><b>Own Product / Developer</b></td><td style="text-align: right; border-left: 0;"><b>Dec 2013 - Present</b></td></tr>
+                    <tr><td colspan="2">🔗 rajeesh.dev/erp</td></tr>
+                    <tr><td colspan="2">
+                        Raptoroid is an ERP package that includes the following major modules: <b>Inventory</b>, <b>Accounts</b>, 
+                        <b>Hospital</b>, <b>Hotel</b>, <b>Travel Agency</b>, <b>User Management</b>, along with around 500 sub-modules. 
+                        It is available in two versions: a Windows version and a web version. An <b>interactive screenshot demo</b> is available 
+                        on the website mentioned above.
+
+                        <p style="font-size: 12pt;">Web Version</p>
+                        <p><i>(May 2019 onwards)</i></p>
+
+                        <b>BACK-END:</b> Technologies used: <b>ASP.NET Core</b>, <b>Web API</b>, <b>Clean-Architecture</b>, <b>Domain-Driven Design</b>
+                        , <b>MediatR</b>, <b>Repository Pattern</b>, <b>CQRS</b>, <b>Command Pattern</b>, <b>Dependency Inversion Principle</b>, <b>Entity Framework Core</b> (Code-First Approach), <b>Sql Server</b>
+                        <br>IDE: <b>Microsoft Visual Studio Community 2022</b>, .Net version: <b>8</b>, C# version: <b>12</b>
+                        <br><br>
+                        <b>FRONT-END</b>: Initially developed using <b>Blazor</b>, later migrated to <b>Angular</b> to align with wider developer familiarity and industry adoption.
+                    </td></tr>
+                </table>
+            </div>
+            
+
         </div>
-
-        <table style="width: 100%; border-collapse: collapse;">
-            <tr>
-                <td style="text-align: left;">contact@outlook.com</td>
-                <td style="text-align: right;">English • Hindi • Malayalam</td>
-            </tr>
-            <tr>
-                <td style="text-align: left;"><b>+91 8884433xxx</b></td>
-                <td style="text-align: right;">DoB: 21 Aug xxxx</td>
-            </tr>
-            <tr>
-                <td style="text-align: left;">Portfolio: <b>rajeesh.dev/erp</b></td>
-                <td style="text-align: right;">linkedin.com/in/rajeeshvengalapurath</td>
-            </tr>
-        </table>
-
-        <p style="text-align: center; font-size: 16pt;">
-            Professional Summary
-        </p>
-
-        <p>
-            Experienced software developer with 17 years in <b>ERP application development</b>, including 15 years in the 
-            <b>.NET</b>  ecosystem and over 4 years with <b>ASP.NET Core</b>. Expertise in building robust solutions using 
-            <b>C#, ASP.NET Core, Angular, WinForms</b>, and <b>SQL Server</b>. Proficient across the entire software development 
-            life cycle—from requirement analysis and architecture to coding, testing, and maintenance.
-        </p>
-
-        <p>
-            Currently working as a freelancer, maintaining and modernizing my <b>own ERP system</b>—from a mature 
-            <b>Windows application</b> to a <b>web-based platform</b> using <b>ASP.NET Core, Angular</b>, and 
-            <b>Clean Architecture</b>. Product details available at: <b>rajeesh.dev/erp</b>
-        </p>
-
-        <p style="text-align: center; font-size: 16pt;">
-            Skills
-        </p>
-
-        <div class="borderedtable" style="display: flex; width: 100%; gap: 20px;">
-
-            <!-- Table 1 -->
-            <table style="flex: 1; border-collapse: collapse; table-layout: fixed; border: 1px solid #f3f3f3;">
-                <colgroup>
-                    <col style="width: 50%;">
-                    <col style="width: 30.9%;">
-                    <col style="width: 19.1%;">
-                </colgroup>
-
-                <tr><td colspan="3" style="font-size: 14pt; padding: 0.069in;"">Frameworks</td></tr>
-                <tr><td><b>.NET ecosystem</b></td><td>2008 - Present</td><td style="text-align: right;">15y</td></tr>
-                <tr><td><b>ASP.NET Core</b></td><td>2019 - Present</td><td style="text-align: right;">4y 5m</td></tr>
-                <tr><td><b>Blazor</b></td><td>2021 - Present</td><td style="text-align: right;">2y</td></tr>
-                <tr><td><b>Angular</b></td><td>2020 - 2021</td><td style="text-align: right;">1y</td></tr>
-                <tr><td><b>Web API</b></td><td>2019 - Present</td><td style="text-align: right;">4y 5m</td></tr>
-                <tr><td><b>Windows Forms</b></td><td>2008 - 2019</td><td style="text-align: right;">11y</td></tr>
-
-                <!-- padding-top and bottom: 0.078in is twice the default padding -->
-                <tr><td style="padding-top: 0.078in; padding-bottom: 0.078in;"><b>Windows Application Development Framework</b></td><td>2011 - 2019</td><td style="text-align: right;">8y</td></tr>
-                
-            </table>
-
-            <!-- Table 2 -->
-            <table style="flex: 1; border-collapse: collapse; table-layout: fixed; border: 1px solid #f3f3f3;">
-                <colgroup>
-                    <col style="width: 50%;">
-                    <col style="width: 30.9%;">
-                    <col style="width: 19.1%;">
-                </colgroup>
-
-                <tr><td colspan="3" style="font-size: 14pt; padding: 0.069in;">Programming Languages</td></tr>
-                <tr><td><b>C#</b></td><td>2009 - Present</td><td style="text-align: right;">14y 5m</td></tr>
-                <tr><td><b>TypeScript</b></td><td>2020 - 2021</td><td style="text-align: right;">1y</td></tr>
-                <tr><td><b>JavaScript</b></td><td>Intermediate</td><td style="text-align: right;"></td></tr>
-                <tr><td><b>VB.NET</b></td><td>2008 - 2009</td><td style="text-align: right;">1y</td></tr>
-                <tr><td><b>VB6</b></td><td>2005 - 2009</td><td style="text-align: right;">3y 4m</td></tr>
-                <tr><td><b>VC++</b></td><td>2002</td><td style="text-align: right;">6m</td></tr>
-                <tr><td><b>C</b></td><td>Academic</td><td></td></tr>
-                <tr><td><b>C++</b></td><td>Academic</td><td></td></tr>
-            </table>
-
-        </div>
-
-        <br>
-
-        <div class="borderedtable" style="display: flex; width: 100%; gap: 20px;">
-
-            <!-- Table 1 -->
-            <table style="flex: 1; border-collapse: collapse; table-layout: fixed; border: 1px solid #f3f3f3;">
-                <colgroup>
-                    <col style="width: 50%;">
-                    <col style="width: 30.9%;">
-                    <col style="width: 19.1%;">
-                </colgroup>
-
-                <tr><td colspan="3" style="font-size: 14pt; padding: 0.069in;">Architectural Patterns</td></tr>
-                <tr><td><b>Clean Architecture</b></td><td>2019 - Present</td><td style="text-align: right;">4y 5m</td></tr>
-                <tr><td><b>Repository Pattern</b></td><td>2019 - Present</td><td style="text-align: right;">4y 5m</td></tr>
-                <tr><td><b>Domain-Driven Design</b></td><td>2019 - Present</td><td style="text-align: right;">4y 5m</td></tr>
-                <!-- padding-top and bottom: 0.078in is twice the default padding -->
-                <tr><td style="padding-top: 0.078in; padding-bottom: 0.078in;"><b>Mediator Pattern (MediatR)</b></td><td>2019 - Present</td><td style="text-align: right;">4y 5m</td></tr>
-                <!-- padding-top and bottom: 0.117in is thrice the default padding -->
-                <tr><td style="padding-top: 0.117in; padding-bottom: 0.117in;"><b>Command & Query Responsibility Segregation (CQRS)</b></td><td>2019 - Present</td><td style="text-align: right;">4y 5m</td></tr>
-                
-            </table>
-
-            <!-- Table 2 -->
-            <table style="flex: 1; border-collapse: collapse; table-layout: fixed; border: 1px solid #f3f3f3;">
-                <colgroup>
-                    <col style="width: 50%;">
-                    <col style="width: 30.9%;">
-                    <col style="width: 19.1%;">
-                </colgroup>
-
-                <tr><td colspan="3" style="font-size: 14pt; padding: 0.069in;">Database Technologies</td></tr>
-                <tr><td><b>Entity Framework Core</b></td><td>2019 - Present</td><td style="text-align: right;">4y 5m</td></tr>
-                <tr><td><b>SQL</b></td><td>2005 - Present</td><td style="text-align: right;">17y</td></tr>
-                <tr><td><b>Microsoft SQL Server</b></td><td>2009 - Present</td><td style="text-align: right;">14y 5m</td></tr>
-                <!-- padding-top and bottom: 0.078in is twice the default padding -->
-                <tr><td style="padding-top: 0.078in; padding-bottom: 0.078in;"><b>MySQL<br>&nbsp;</b></td><td>2008 - 2009</td><td style="text-align: right;">1y</td></tr>
-                <!-- padding-top and bottom: 0.117in is thrice the default padding -->
-                <tr><td style="padding-top: 0.117in; padding-bottom: 0.117in;"><b>&nbsp;<br>MS Access<br>&nbsp;</b></td><td>2005 - 2009</td><td style="text-align: right;">3y 4m</td></tr>
-                
-            </table>
-
-        </div>
-
-        <br>
-
-        <div class="borderedtable" style="display: flex; width: 100%; gap: 20px;">
-
-            <!-- Table 1 -->
-            <table style="flex: 1; border-collapse: collapse; table-layout: fixed; border: 1px solid #f3f3f3;">
-                <colgroup>
-                    <col style="width: 50%;">
-                    <col style="width: 50%;">
-                </colgroup>
-
-                <tr><td colspan="3" style="font-size: 14pt; padding: 0.069in;">Domain Knowledge</td></tr>
-                <tr><td><b>1. Inventory</b></td><td><b>2. Accounting</b></td></tr>
-                <tr><td><b>3. Hospital</b></td><td><b>4. Jewelry</b></td></tr>
-                <tr><td><b>5. Hotel / Resort</b></td><td><b>6. Travel Agency</b></td></tr>
-                
-            </table>
-
-            <!-- Table 2 -->
-            <table style="flex: 1; border-collapse: collapse; table-layout: fixed; border: 1px solid #f3f3f3;">
-                <colgroup>
-                    <col style="width: 50%;">
-                    <col style="width: 30.9%;">
-                    <col style="width: 19.1%;">
-                </colgroup>
-
-                <tr><td colspan="3" style="font-size: 14pt; padding: 0.069in;">Other</td></tr>
-                <tr><td><b>CSS</b></td><td>2019 - Present</td><td style="text-align: right;">4y 5m</td></tr>
-                <tr><td><b>Crystal Reports</b></td><td>2005 - 2019</td><td style="text-align: right;">14y</td></tr>
-                <tr><td><b>Git</b></td><td>2019 - Present</td><td style="text-align: right;">4y 5m</td></tr>
-                
-            </table>
-
-        </div>
-
-    </div>
-
-</body>
-</html>
+    </body>
+    </html>

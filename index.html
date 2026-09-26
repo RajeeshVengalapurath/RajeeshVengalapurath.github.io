@@ -73,25 +73,40 @@
     .social-link:hover svg {
       transform: scale(1.1);
     }
-    .project-btn {
-    display: inline-block;
-    padding: 12px 32px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
-    color: black;
-    text-decoration: none;
-    border: 1.5px solid black;
-    border-radius: 999px;
-    transition: all 0.25s ease;
-    background: transparent;
-  }
 
-  .project-btn:hover {
-    background: black;
-    color: white;
-    transform: translateY(-2px);
-  }
+    .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            min-width: 120px;
+            padding: 11px 24px;
+
+            border: 1px solid #1f2937;
+            border-radius: 6px;
+
+            background: transparent;
+            color: #1f2937;
+
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+
+            transition: all 0.2s ease;
+        }
+
+        .btn:hover {
+            background: #1f2937;
+            color: #ffffff;
+        }
+  
   </style>
 </head>
 
@@ -117,9 +132,10 @@
     <!-- LinkedIn Badge -->
     <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="rajeeshvengalapurath" data-version="v1"></div>
     
-    <a href="https://rajeeshvengalapurath.github.io/erp" class="project-btn">
-      Projects
-    </a>
+    <nav class="buttons">
+        <!-- <a href="/resume/" class="btn">Resume</a> -->
+        <a href="/erp/" class="btn">Projects</a>
+    </nav>
     
     <!-- Social Icons -->
     <div class="social-icons">
